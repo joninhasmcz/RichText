@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Editor</title>
+</head>
+<body>
+
+    <button id="bold" onclick="bold()"> Negrito </button>
+    <iframe name="editor" id="editor" contenteditable="true" src="about:blank"></iframe>
+
+    <script>
+        editor.document.designMode = 'on';
+        var bold = function() {
+            editor.document.execCommand('bold', false, null);
+        }
+    </script>
+</body>
+</html>
